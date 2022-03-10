@@ -24,15 +24,40 @@ def prep_telco(df):
                                      dummy_na=False,
                                      drop_first = True)
         df = pd.concat([df, dummies], axis=1)
-        df = df.drop(columns=[col])    
+        df = df.drop(columns=[col])        
+        df.rename(columns ={ 'gender_Male': 'is_male',
+                     'partner_Yes': 'has_partner',
+                     'dependents_Yes': 'has_dependents',
+                     'online_security_Yes': 'online_security',
+                     'online_backup_Yes': 'online_backup',
+                     'phone_service_Yes': 'phone_service',
+                     'device_protection_Yes': 'device_protection',
+                     'tech_support_Yes': 'tech_support',
+                     'streaming_tv_Yes': 'streaming_tv',
+                     'streaming_movies_Yes': 'streaming_movies',
+                     'paperless_billing_Yes': 'paperless_billing',
+                     'churn_Yes': 'churn',
+                     'multiple_lines_No': 'one_line',
+                     'multiple_lines_No phone service': 'no_phone_service',
+                     'multiple_lines_Yes': 'has_multiple_lines',
+                     'contract_type_Month-to-month': 'month_to_month_contract',
+                     'contract_type_One year': 'one_year_contract',
+                     'contract_type_Two year': 'two_year_contract',
+                     'internet_service_type_DSL': 'has_dsl',
+                     'internet_service_type_Fiber optic': 'has_fiber_optic',
+                     'internet_service_type_None': 'no_internet',
+                     'payment_type_Bank transfer (automatic)':'bank_transfer_auto',
+                     'payment_type_Credit card (automatic)': 'credit_card_auto',
+                     'payment_type_Electronic check': 'electronic_check_nonauto',
+                     'payment_type_Mailed check': 'mailed_check_nonauto'}, inplace True)                     
     return df
 
 # Create a TVT split
-def train_validate_test_split(df, target, seed=1349):
+def train_validate_test_split(df, target, seed=123):
     '''
     This function takes in a dataframe and splits it into train, validate, and test. 
     Test is first extracted as 20% test, 80% train_validate split.
-    Then from the remaining 80%, the train and validate are extracted using a 70/30
+    Then from the 80%, the train and validate are extracted using a 70/30
     split respectively. The function then returns them in the order of train,
     validate, and test.
     '''   
@@ -42,4 +67,6 @@ def train_validate_test_split(df, target, seed=1349):
     train, validate = train_test_split(train_validate, test_size=0.3, 
                                        random_state=seed,
                                        stratify=train_validate[target])
+    
+    train, validate, test = train_validate_test_split(df, target='churn_Yes')
     return train, validate, test
