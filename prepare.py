@@ -12,7 +12,7 @@ def prep_telco(df):
         categories are usable for analysis
     '''
 # Drop unnecessary columns that contain dupilicated information    
-    df = df.drop(columns=['payment_type_id', 'internet_service_type_id', 'contract_type_id', 'customer_id'])
+    df = df.drop(columns=['payment_type_id', 'internet_service_type_id', 'contract_type_id'])
 # Change the Total Changes column to a float    
     df.total_charges = df.total_charges.replace(' ', 0).astype(float)
 # Identify columns to be receive dummies   
@@ -49,11 +49,12 @@ def prep_telco(df):
                      'payment_type_Bank transfer (automatic)':'bank_transfer_auto',
                      'payment_type_Credit card (automatic)': 'credit_card_auto',
                      'payment_type_Electronic check': 'electronic_check_nonauto',
-                     'payment_type_Mailed check': 'mailed_check_nonauto'}, inplace True)                     
+                     'payment_type_Mailed check': 'mailed_check_nonauto'},
+                  inplace=True)                     
     return df
 
 # Create a TVT split
-def train_validate_test_split(df, target, seed=123):
+def split_data(df):
     '''
     This function takes in a dataframe and splits it into train, validate, and test. 
     Test is first extracted as 20% test, 80% train_validate split.
@@ -61,12 +62,10 @@ def train_validate_test_split(df, target, seed=123):
     split respectively. The function then returns them in the order of train,
     validate, and test.
     '''   
-    train_validate, test = train_test_split(df, test_size=0.2, 
-                                            random_state=seed, 
-                                            stratify=df[target])
-    train, validate = train_test_split(train_validate, test_size=0.3, 
-                                       random_state=seed,
-                                       stratify=train_validate[target])
-    
-    train, validate, test = train_validate_test_split(df, target='churn_Yes')
+    train_validate, test = train_test_split(df, test_size=.2, 
+                                            random_state=123, 
+                                            stratify=df.churn)
+    train, validate = train_test_split(train_validate, test_size=.3, 
+                                       random_state=123, 
+                                       stratify=train_validate.churn)
     return train, validate, test
