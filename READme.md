@@ -1,24 +1,23 @@
 Classification Project - Telco Churn 
 Codeup - Innis Cohort - March 2022
 
-===
 
 ## I. PROJECT OVERVIEW
-
+----
 ### 1.  Goal:
 The goal of this project is to identify key drivers of churn for Telco Communications. Reducing churn means increasing attrition of customers which will, in turn, lead to increases in future revenue. Using machine learning and statistical analysis, predictions of future churn will also be identified with recommendations to follow for prevention will be made in order to improve customer retention.
-
+----
 ### 2. DESCRIPTION:
 
 With an ever-competitive telecommunications market, it is vital to understand your customer base in order to prevent customer churn and maximize retention.  It is far less expensive to keep an existing customer than it is to acquire a new one for the long term when marketing costs are included. Therefore, it is important to identify drivers of churn in an effort to prevent attrition. Thus, retaining current customers for the long term.  Ultimately, customer retention is important for maintaining and increasing profit.  This project will identify key drivers of churn for the Telco dataset and use modeling and statistics to identify ways to prevent churn in the future. Ultimately it will provide a recommendation that could be used by Telco or other customer-based service companies to maximize retention. 
-
+----
 #### INITIAL QUESTIONS: 
 
-Do month-to-month customers really churn at a higher rate than all others?
-In what year do most customers churn?
-Do customers that churn pay more than other customers?
-Is churn independent of internet service type?
-
+- Do month-to-month customers really churn at a higher rate than all others?
+- In what year do most customers churn?
+- Do customers that churn pay more than other customers?
+- Is churn independent of internet service type?
+----
 ### 3. DELIVERABLES:
 - README file - provides an overview of the project and steps for project reproduction.  
 - Draft Jupyter Notebook - provides all steps taken to produce the project.
@@ -27,8 +26,7 @@ Is churn independent of internet service type?
 - prepare.py - used to prepare data
 - Report Jupyter Notebook - provides final presentation-ready assessment and recommendations. 
 - .csv File - provides primary data used to make predictions & recommendations. 
-
-
+----
 ## II. DATA CONTEXT
 
 ## DATA DICTIONARY:
@@ -68,7 +66,7 @@ The final DataFrame used to explore the data for this project contains the follo
 |  one_year          |  customer’s contract renewal is annually    |
 |  two_year          |  customer’s contract renewal is biannually   |
 
-
+----
 ## III. PROCESS:
 
 This project resulted from following the Data Science Pipeline using the following steps:  
@@ -112,7 +110,7 @@ Plan➜ Acquire ➜ Prepare ➜ Explore ➜ Model & Evaluate ➜ Deliver
 - Present a final Jupyter Notebook
 - Make available modules used and project files on Github
 
-
+----
 ## IV. REPRODUCIBILITY: 
 	
 ### Steps to Reproduce
@@ -126,13 +124,13 @@ Plan➜ Acquire ➜ Prepare ➜ Explore ➜ Model & Evaluate ➜ Deliver
 4.) Ensure pandas, numpy, matplotlib, scipy, sklearn, and seaborn are available
 
 5.) Follow steps outline in this README.md to run Telco - Final Report.ipynb
-
+----
 ## V. Key Findings and Takeaways
 
 - Churning customers are paying higher monthly charges versus other non-churning customers.
 - Most customer churn happens within the first year of tenure.
 - Internet service type is related to customer churn.
 - Month-to-month customers churn at a much higher rate versus other contract types.
-
+----
 
 
