@@ -20,13 +20,13 @@ Do customers that churn pay more than other customers?
 Is churn independent of internet service type?
 
 ### 3. DELIVERABLES:
-README file - provides an overview of the project and steps for project reproduction.  
-Draft Jupyter Notebook - provides all steps taken to produce the project.
-Python Module File - provides reproducible code for acquiring,  preparing, exploring, & testing the data.
-acquire.py - used to acquire data
-prepare.py - used to prepare data
-Report Jupyter Notebook - provides final presentation-ready assessment and recommendations. 
-.csv File - provides primary data used to make predictions & recommendations. 
+- README file - provides an overview of the project and steps for project reproduction.  
+- Draft Jupyter Notebook - provides all steps taken to produce the project.
+- Python Module File - provides reproducible code for acquiring,  preparing, exploring, & testing the data.
+- acquire.py - used to acquire data
+- prepare.py - used to prepare data
+- Report Jupyter Notebook - provides final presentation-ready assessment and recommendations. 
+- .csv File - provides primary data used to make predictions & recommendations. 
 
 
 ## II. DATA CONTEXT
@@ -76,41 +76,41 @@ This project resulted from following the Data Science Pipeline using the followi
 Plan➜ Acquire ➜ Prepare ➜ Explore ➜ Model & Evaluate ➜ Deliver
 
 #### 1. Planning
-Define the project goal
-Determine proper format for the audience
-Asked questions that would lead to final goal
+- Define the project goal
+- Determine proper format for the audience
+- Asked questions that would lead to final goal
 
 #### 2. Acquisition
-Create a function to pull appropriate information from the telco_churn_db
-Create and save an acquire.py file and made it available to import
+- Create a function to pull appropriate information from the telco_churn_db
+- Create and save an acquire.py file and made it available to import
 
 #### 3. Preparation
-Create a function that will do the following
-Remove any duplicate data that in repetitive
-Ensure all data types are usable
-Use encoding to ensure categories are usable for machine learning
-Rename columns to improve readability
-Add a function that splits the acquired data into Train, Validate, and Test sets
-20% is originally pulled out in order to test in the end
-From the remaining 80%, 30% is pullout out to validate training
-The remaining data is used as testing data
-In the end, there should be a 56% Train, 24% Validate, and 20% Test split 
-Create a prepare.py file with all the functions in this section
+- Create a function that will do the following
+- Remove any duplicate data that in repetitive
+- Ensure all data types are usable
+- Use encoding to ensure categories are usable for machine learning
+- Rename columns to improve readability
+- Add a function that splits the acquired data into Train, Validate, and Test sets
+  20% is originally pulled out in order to test in the end
+- From the remaining 80%, 30% is pullout out to validate training
+- The remaining data is used as testing data
+- In the end, there should be a 56% Train, 24% Validate, and 20% Test split 
+- Create a prepare.py file with all the functions in this section
 
 #### 4. Exploration
-Create an exploratory workbook
-Use the initial questions to help explore the data
-Make visualizations to help with understanding drivers
-Use stats testing on established hypotheses
+- Create an exploratory workbook
+- Use the initial questions to help explore the data
+- Make visualizations to help with understanding drivers
+- Use stats testing on established hypotheses
 
 #### 5. Modeling & Evaluation
-Use models to evaluate true drivers of churn
-Make predictions of models and what they say about the data
-Compare all models to evaluate the best for use
+- Use models to evaluate true drivers of churn
+- Make predictions of models and what they say about the data
+- Compare all models to evaluate the best for use
 
 #### 6. Deliver
-Present a final Jupyter Notebook
-Make available modules used and project files on Github
+- Present a final Jupyter Notebook
+- Make available modules used and project files on Github
 
 
 ## IV. REPRODUCIBILITY: 
@@ -129,10 +129,10 @@ Make available modules used and project files on Github
 
 ## V. Key Findings and Takeaways
 
-Churning customers are paying higher monthly charges versus other non-churning customers.
-Most customer churn happens within the first year of tenure.
-Internet service type is related to customer churn.
-Month-to-month customers churn at a much higher rate versus other contract types.
+- Churning customers are paying higher monthly charges versus other non-churning customers.
+- Most customer churn happens within the first year of tenure.
+- Internet service type is related to customer churn.
+- Month-to-month customers churn at a much higher rate versus other contract types.
 
 
 
