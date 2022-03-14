@@ -1,7 +1,6 @@
 Classification Project - Telco Churn 
 Codeup - Innis Cohort - March 2022
-
-
+----
 ## I. PROJECT OVERVIEW
 ----
 ### 1.  Goal:
