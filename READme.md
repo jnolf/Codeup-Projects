@@ -110,6 +110,7 @@ Plan ➜ Acquire ➜ Prepare ➜ Explore ➜ Model & Evaluate ➜ Deliver
 ### 6. DELIVERY
 - Present a final Jupyter Notebook
 - Make available modules used and project files on Github  
+
 —---  
 ## REPRODUCIBILITY: 
 	
