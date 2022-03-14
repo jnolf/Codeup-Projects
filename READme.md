@@ -1,9 +1,10 @@
 Classification Project - Telco Churn 
 Codeup - Innis Cohort - March 2022  
-----
+
+
 ## PROJECT OVERVIEW  
 
-----  
+ 
 ### 1.  Goals:
 The goal of this project is to identify key drivers of churn for Telco, a telecommunications company, and make recommendations to reduce churn in order to increase customer retention, and ultimately increase revenue. Churn is another term for attrition. It represents customers leaving and turning away from Telco services. Once drivers are identified, machine learning and statistical analysis will provide a measure for predicting future churn in order to effectively use Company tools to increase attrition.  In the end, the following deliverables will be available:
 
@@ -15,12 +16,12 @@ The goal of this project is to identify key drivers of churn for Telco, a teleco
 - Report Jupyter Notebook - provides final presentation-ready assessment and recommendations. 
 - .csv File - provides primary data used to make predictions & recommendations.  
 
-----  
+
 ### 2. DESCRIPTION:
 
 This project will start with data acquisition. From that point, it will move into cleaning and wrangling the data. Exploration will follow in order to look into possible drivers of churn along with models to predict churn based on present Telco data. Once insights are found and presented, a final report will be created that includes all code that allows for reproducibility along with a .csv file that predicts probability of churn for customer ids based on the most accurate model.    
 
-----  
+
 #### INITIAL QUESTIONS: 
 
 - Do month-to-month customers really churn at a higher rate than all others?
@@ -28,7 +29,7 @@ This project will start with data acquisition. From that point, it will move int
 - Do customers that churn pay more than other customers?
 - Is churn independent of internet service type?  
 
-----  
+ 
 ## DATA DICTIONARY:
 
 The final DataFrame used to explore the data for this project contains the following variables (columns).  The variables, along with their data types, are defined below:  
@@ -66,7 +67,8 @@ The final DataFrame used to explore the data for this project contains the follo
 |  one_year          |  customer’s contract renewal is annually    |
 |  two_year          |  customer’s contract renewal is biannually   |
 
-—---
+
+
 ## PROCESS:
 The following outlines the process taken through the Data Science Pipeline to complete this project.  
 
@@ -111,7 +113,7 @@ Plan ➜ Acquire ➜ Prepare ➜ Explore ➜ Model & Evaluate ➜ Deliver
 - Present a final Jupyter Notebook
 - Make available modules used and project files on Github  
 
-—---  
+ 
 ## REPRODUCIBILITY: 
 	
 ### Steps to Reproduce
@@ -126,7 +128,7 @@ Plan ➜ Acquire ➜ Prepare ➜ Explore ➜ Model & Evaluate ➜ Deliver
 
 5. Follow steps outline in this README.md to run Telco - Final Report.ipynb  
 
-—---  
+
 ## KEY TAKEAWAYS:
 
 ### Conclusions
@@ -143,7 +145,7 @@ Plan ➜ Acquire ➜ Prepare ➜ Explore ➜ Model & Evaluate ➜ Deliver
 In the future we will be able to use this model in order to predict with 80% accuracy whether or not a customer will churn. Knowing this information will allow us to better focus resources and marketing campaigns in order to reduce customer churn in the future and better effect our bottom line.
 A further dive into the data with more time allowed will help in improving the accuracy of our model by identifying more conclusive and impactful drivers.  
 
-—---  
+
 
 
 
