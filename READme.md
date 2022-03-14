@@ -33,41 +33,40 @@ This project will start with data acquisition. From that point, it will move int
 
 The final DataFrame used to explore the data for this project contains the following variables (columns).  The variables, along with their data types, are defined below:  
 
-
-|  Variables             |    Data Type                                |    Definition             |
-| :--------------------:   | :----------------------------------------: | :--------------------: |
-customer_id           |               object             | unique identifier for each customer |  
-is_senior                |                 integer (whole number)	|  senior citizen (65+), 0= no, 1=yes| 
-tenure_months       |                      integer (whole number)	| length of customer service in months|
-monthly_charges     |                    float (decimal)	| current monthly charges in USD |
-total_charges            |               float (decimal)	| sum of all charges for tenure in USD |
-contract_type             |               object	| type of contract customer signed: month-to-month, One year, Two year|
-internet_service_type |               object	| type of internet service customer has or had: Fiber optic, DSL, None|	
-payment_type |   object	| type of payment method customer uses or used: Electronic check, Mailed check, Bank transfer (automatic), Credit card (automatic) |
-is_male_Male         |   integer ( boolean 0,1)	| binary gender identity 0= male, 1=female|  	
-has_partner_Yes    |                       integer ( boolean 0,1)	| has spouse, partner, or significant other, 0= no, 1=yes||
-has_dependents_Yes     |  integer ( boolean 0,1)	| has dependent(s), children or otherwise, 0= no, 1=yes|
-has_phone_service_Yes |                    integer ( boolean 0,1)	| is or was a phone customer, 0= no, 1=yes|
-has_multiple_lines_No phone service |      integer ( boolean 0,1)	| didn’t or doesn’t have phone service, 0= no, 1=yes|
-has_multiple_lines_Yes   |                 integer ( boolean 0,1)	| has or had multiple phone lines, 0= no, 1=yes|
-has_online_security_Yes   |  integer ( boolean 0,1)| internet option: has or had service add-on, 0= no, 1=yes|
-has_online_backup_Yes  | integer ( boolean 0,1) | internet option: has or had service add-onr, 0= no, 1=yes|
-has_device_protection_Yes  |  integer ( boolean 0,1)|  internet option: has or had service add-on, 0= no, 1=yes|
-has_tech_support_Yes  |               integer ( boolean 0,1)	| internet option: has or had service add-on, 0= no, 1=yes|
-has_streaming_tv_Yes   |          integer ( boolean 0,1)	| internet option: has or had service add-on, 0= no, 1=yes|
-has_streaming_movies_Yes  |       integer ( boolean 0,1)	| internet option: has or had service add-on, 0= no, 1=yes|
-has_paperless_billing_Yes |    integer ( boolean 0,1)|  customer bill is or was paperless, 0= no, 1=yes |
-did_churn_Yes (target) |            integer ( boolean 0,1)	| customer services have been cancelled, 0= no, 1=yes|   
-contract_type_One year  |                  integer ( boolean 0,1|  customer has or did have 1 year contract, 0= no, 1=yes|
-contract_type_Two year  |                  integer ( boolean 0,1) | customer has or did have 2 year contract, 0= no, 1=yes|	
-internet_service_type_Fiber optic  | integer ( boolean 0,1)|  is or was a fiber optic internet customer,  0= no, 1=yes |
-internet_service_type_None     | integer ( boolean 0,1)| s or was an internet customer,  0= no, 1=yes |
-payment_type_Credit card (automatic)   |   integer ( boolean 0,1)	| payment type is or was credit card, 0= no, 1=yes |	
-payment_type_Electronic check     |        integer ( boolean 0,1)	| payment type is or was electronic check, 0= no, 1=yes |	
-payment_type_Mailed check       |          integer ( boolean 0,1)	| payment type is or was check via post, 0= no, 1=yes |	
+|  Variables             |  Definition                                |  
+| :--------------------:   | :----------------------------------------: |
+|  churn           |  customer has left and canceled services     |
+|  customer_id        |  unique identifier for each customer       |
+|  is_senior             |  qualifies as senior citizen (65+)         |
+|  tenure *              |  length of customer service in months      |
+|  multiple_lines        |  customer has multiple phone lines           |
+|  monthly_charges *     |  current monthly charges in USD            |
+|  total_charges         |  sum of all charges for tenure in USD      |
+|  internet_service_type  | describes the type of internet service      |
+|  is_male               |  binary gender identity is male          |
+|  has_partner           |  has spouse, partner, or significant other |
+|  has_dependent         |  has dependent(s), children or otherwise   |
+|  no_phone_service     |  customer with no phone service             |
+|  one_line              |  customer with one phone line                 |
+|  no_internet          |  customer with  no internet service            |
+|  dsl_int                  |  uses Telco dsl internet service         | 
+|  fiber_int              |  uses Telco fiber optic internet service         |
+|  streaming_tv          |  internet option: has  service add-on    |
+|  streaming_movies      |  internet option: has service add-on   |
+|  online_security       |  internet option: has service add-on    |
+|  online_backup         |  internet option: has service add-on   |
+|  device_protection     |  internet option: has service add-on   |
+|  tech_support          |  internet option: has service add-on   |
+|  mailed_check          |  payment type is mailed check non autopay     |
+|  elecc_nonauto    |  payment type is electronic check/non autopay   |
+|  bt_auto         |  payment type is bank transfer/autopay      |
+|  cc_auto           |  payment type is credit card/autopay       |
+|  paperless_billing     |  customer billing option is paperless         |
+|  month_to_month          |  customer’s contract renewal is monthly  |
+|  one_year          |  customer’s contract renewal is annually    |
+|  two_year          |  customer’s contract renewal is biannually   |
 
 —---
-
 ## PROCESS:
 The following outlines the process taken through the Data Science Pipeline to complete this project.  
 
