@@ -67,6 +67,7 @@ payment_type_Electronic check     |        integer ( boolean 0,1)	| payment type
 payment_type_Mailed check       |          integer ( boolean 0,1)	| payment type is or was check via post, 0= no, 1=yes |	
 
 —---
+
 ## PROCESS:
 The following outlines the process taken through the Data Science Pipeline to complete this project.  
 
