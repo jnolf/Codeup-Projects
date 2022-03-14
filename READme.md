@@ -145,6 +145,7 @@ Plan ➜ Acquire ➜ Prepare ➜ Explore ➜ Model & Evaluate ➜ Deliver
 In the future we will be able to use this model in order to predict with 80% accuracy whether or not a customer will churn. Knowing this information will allow us to better focus resources and marketing campaigns in order to reduce customer churn in the future and better effect our bottom line.
 A further dive into the data with more time allowed will help in improving the accuracy of our model by identifying more conclusive and impactful drivers.  
 
+---- 
 
 
 
