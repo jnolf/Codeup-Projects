@@ -129,6 +129,10 @@ Make available modules used and project files on Github
 
 ## V. Key Findings and Takeaways
 
+Churning customers are paying higher monthly charges versus other non-churning customers.
+Most customer churn happens within the first year of tenure.
+Internet service type is related to customer churn.
+Month-to-month customers churn at a much higher rate versus other contract types.
 
 
 
