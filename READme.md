@@ -2,6 +2,7 @@ Classification Project - Telco Churn
 Codeup - Innis Cohort - March 2022  
 ----
 ## PROJECT OVERVIEW  
+
 ----  
 ### 1.  Goals:
 The goal of this project is to identify key drivers of churn for Telco, a telecommunications company, and make recommendations to reduce churn in order to increase customer retention, and ultimately increase revenue. Churn is another term for attrition. It represents customers leaving and turning away from Telco services. Once drivers are identified, machine learning and statistical analysis will provide a measure for predicting future churn in order to effectively use Company tools to increase attrition.  In the end, the following deliverables will be available:
@@ -13,10 +14,12 @@ The goal of this project is to identify key drivers of churn for Telco, a teleco
 - prepare.py - used to prepare data
 - Report Jupyter Notebook - provides final presentation-ready assessment and recommendations. 
 - .csv File - provides primary data used to make predictions & recommendations.  
+
 ----  
 ### 2. DESCRIPTION:
 
 This project will start with data acquisition. From that point, it will move into cleaning and wrangling the data. Exploration will follow in order to look into possible drivers of churn along with models to predict churn based on present Telco data. Once insights are found and presented, a final report will be created that includes all code that allows for reproducibility along with a .csv file that predicts probability of churn for customer ids based on the most accurate model.    
+
 ----  
 #### INITIAL QUESTIONS: 
 
@@ -24,7 +27,8 @@ This project will start with data acquisition. From that point, it will move int
 - In what year do most customers churn?
 - Do customers that churn pay more than other customers?
 - Is churn independent of internet service type?  
-—---  
+
+----  
 ## DATA DICTIONARY:
 
 The final DataFrame used to explore the data for this project contains the following variables (columns).  The variables, along with their data types, are defined below:  
@@ -61,6 +65,7 @@ internet_service_type_None     | integer ( boolean 0,1)| s or was an internet cu
 payment_type_Credit card (automatic)   |   integer ( boolean 0,1)	| payment type is or was credit card, 0= no, 1=yes |	
 payment_type_Electronic check     |        integer ( boolean 0,1)	| payment type is or was electronic check, 0= no, 1=yes |	
 payment_type_Mailed check       |          integer ( boolean 0,1)	| payment type is or was check via post, 0= no, 1=yes |	
+
 —---
 ## PROCESS:
 The following outlines the process taken through the Data Science Pipeline to complete this project.  
@@ -119,6 +124,7 @@ Plan ➜ Acquire ➜ Prepare ➜ Explore ➜ Model & Evaluate ➜ Deliver
 4. Ensure pandas, numpy, matplotlib, scipy, sklearn, and seaborn are available
 
 5. Follow steps outline in this README.md to run Telco - Final Report.ipynb  
+
 —---  
 ## KEY TAKEAWAYS:
 
@@ -135,6 +141,7 @@ Plan ➜ Acquire ➜ Prepare ➜ Explore ➜ Model & Evaluate ➜ Deliver
 ### Next Steps
 In the future we will be able to use this model in order to predict with 80% accuracy whether or not a customer will churn. Knowing this information will allow us to better focus resources and marketing campaigns in order to reduce customer churn in the future and better effect our bottom line.
 A further dive into the data with more time allowed will help in improving the accuracy of our model by identifying more conclusive and impactful drivers.  
+
 —---  
 
 
