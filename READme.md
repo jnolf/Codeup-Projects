@@ -4,7 +4,7 @@ Codeup - Innis Cohort - March 2022
 ----  
 ## PROJECT OVERVIEW  
 
-----  
+ 
 ### 1.  Goals:
 The goal of this project is to identify key drivers of churn for Telco, a telecommunications company, and make recommendations to reduce churn in order to increase customer retention, and ultimately increase revenue. Churn is another term for attrition. It represents customers leaving and turning away from Telco services. Once drivers are identified, machine learning and statistical analysis will provide a measure for predicting future churn in order to effectively use Company tools to increase attrition.  In the end, the following deliverables will be available:
 
